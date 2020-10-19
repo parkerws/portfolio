@@ -27,12 +27,14 @@ body {
     
     color: #fff;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    background: url("background.jpg") no-repeat center center fixed;
+    background: url("img/background.jpg") no-repeat center center fixed;
     background-size: cover;
     
 }
 
-
+h4 {
+    display: inline;
+}
 
 nav {
 justify-items: center;
@@ -51,11 +53,22 @@ div.album {
     margin: 0% 20%;
 }
 
-
+p.font-weight-normal{
+    text-shadow: .5rem .5rem 1.5rem rgba(0,0,0,1);
+}
+h4 button {
+    margin-bottom: .5rem;
+}
 
 .container-fluid {
     width: auto;
 }
+
+a i {
+    font-size: 2rem;
+}
+
+
 
 .inner-cover {
     padding-top: 50%;
@@ -142,7 +155,7 @@ div.album {
 .jumbotron {
     width: auto;
     margin: 0% 20% 2% 20%;
-    background-color: rgba(10, 10, 10, 0.2)
+    background-color: rgba(50, 50, 50, 0.2)
 }
 .nav-link {
     padding: .25rem 0;
@@ -188,7 +201,9 @@ div.album {
     padding-top: 40;
 }
 
-
+.fa-linkedin {
+    padding-bottom: 10px;
+}
 
 @media (min-width: 576px) { 
     .card-img-top {

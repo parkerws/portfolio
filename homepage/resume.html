@@ -2,11 +2,62 @@
 
 <html lang="en">
     <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" >
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="scripts.js"></script>
         <title>My Webpage</title>
     </head>
-    <body>
-        hello, resume
+    <body class="text-center">
+        <div class="container-fluid d-flex p-3 mx-auto flex-column">
+        <nav class="navbar navbar-default navbar-fixed-top ">
+            <div class="container">
+                <div class="navbar-header navbar-left">
+                    <h3 class="navbar-brand">Will Parker</h3>
+                </div>
+                <div class="nav navbar-right">
+                    <a class="nav-link" href="index.html" >Home </a>
+                    <a class="nav-link" href="projects.html" >Projects </a>
+                    <a class="nav-link active" href="#" >About </a>
+                    <a class="nav-link" href="contact.html">Contact </a>
+                </div>
+                
+            
+            </div>
+        </nav>
+        <main role="main">
+            <div class="jumbotron p-4">
+                <div class="d-flex flex-row">
+                    <div class="col-md-4">
+                        <div class="view overlay">
+                            <img class="img-fluid" src="img/93026897_10221138784714823_467816329030664192_n.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 text-md-left">
+                    
+                        <h4 class="h4">About Me</h4>  <a class="btn btn-md"  href="https://www.linkedin.com/in/parkerws/" target="_blank"><i class="fab fa-linkedin fa-xl"></i></a>
+                        <p class="font-weight-normal">I've been fascinated by technology since I was a kid. My father, an electrical engineer, inspired me to continue to tinker, learn, and succeed.</p>
+                        <p class="font-weight-normal">
+                            Through a decade of military service, I picked up many perspectives on how technology permeates our everyday lives, and even more so, can be used against us when we are most vulnerable.
+                            This inspired me to focus on security, both physical and technological, for several years. I learned scripting, how HTTP worked, and how even the most robust security solutions
+                            can easily be broken by some clever and inexpensive social engineering. 
+                        </p>
+                        <p class="font-weight-normal">
+                            My journey led me to today, where I develop secure software solutions that enable others to thrive. I have experience in back-end technologies/languages such as node.js, C#/ASP.NET, Entity Framework, and Python/Flask/Django.
+                        </p>
+                        <p class="font-weight-normal">More recently, I have been determined to take on front-end development as well, working with languages/technologies such as HTML/CSS/JavaScript, Bootstrap, Blazor, and Django. </p>
+                        <p class="font-weight-normal">I also picked up skillsets in other domains, such as server administration, ethical hacking, social engineering, machine learning, and data analytics.</p>
+                        <button class="btn btn-dark" id="resume">
+                                <i class="fas fa-file-pdf"></i>  Resume 10-Oct-2020
+                        </button>
+                </div>
+            </div>
+            </div>
+
+        </main>
+        </div>
     </body>
 </html>
