@@ -1,0 +1,167 @@
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+
+html,
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+body {
+    height: auto;
+    color: #fff;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+
+
+nav {
+justify-items: center;
+align-content: center;
+    
+}
+
+main {
+    padding-top: 5%;
+}
+
+div.album {
+    background-color: rgba(245, 245, 245, 0.05);
+    backdrop-filter: blur(5px);
+    
+}
+
+
+
+.container {
+    justify-content: space-between;
+    
+}
+
+.container-fluid {
+    width: 50%;
+}
+
+.inner-cover {
+    padding-top: 40%;
+}
+
+.cover-container {
+    max-width: 42em;
+}
+
+.masthead {
+    margin-bottom: 2rem;
+}
+
+.card-text {
+    height: 60px;
+}
+
+
+.card {
+    transition: -webkit-transform 0.3s ease;
+    width: 20rem;
+}
+.card:hover {
+    transform: scale(1.03, 1.03);
+}
+
+.jumbotron {
+    
+}
+
+.nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > div[class*='col-'] {
+    display: flex;
+}
+
+
+@media (min-width: 48em){
+
+    .nav-masthead {
+        float: right;
+    }
+}
+
+.inner-cover {
+    padding-top: 40;
+}
+
+.cover{
+    padding: 0 1.5rem;
+
+}
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+@media (min-width: 576px) { 
+    .card-img-top {
+      height: 50vw;
+    }
+  }
+  
+  @media (min-width: 768px) { 
+    .card-img-top {
+      height: 30vw;
+    }
+  }
+  
+  @media (min-width: 992px) { 
+    .card-img-top {
+      height: 20vw;
+    }
+  }
+  
+  @media (min-width: 1200px) { 
+    .card-img-top {
+      height: 20vw;
+    }
+  }
+  
