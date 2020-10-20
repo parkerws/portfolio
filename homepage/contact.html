@@ -4,9 +4,64 @@
     <head>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
+        <link rel="icon" href="img/favicon.ico">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script src="scripts.js"></script>
+        
         <title>My Webpage</title>
     </head>
     <body>
-        hello, contact
+        <div class="container-fluid d-flex p-3 mx-auto flex-column">
+            <nav class="navbar navbar-default navbar-fixed-top ">
+                <div class="container">
+                    <div class="navbar-header navbar-left">
+                        <h3 class="navbar-brand">Will Parker</h3>
+                    </div>
+                    <div class="nav navbar-right">
+                        <a class="nav-link" href="index.html" >Home </a>
+                        <a class="nav-link" href="projects.html" >Projects </a>
+                        <a class="nav-link" href="resume.html" >About </a>
+                        <a class="nav-link active" href="#">Contact </a>
+                    </div>
+                    
+                
+                </div>
+            </nav>
+        
+            <div class="jumbotron mt-5 text-center">
+                <h1>Contact Me</h1>
+
+                <h6>Let me know if you would like to work together, or if you have any comments/questions!</h5>
+            </div>
+            <div class="container-fluid">
+                    <form
+                        action="https://formspree.io/f/mpzodwnz"
+                        method="POST"
+                        name="contact"
+                    >
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="_replyto" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" placeholder="Your Message"></textarea>
+                    </div>
+                        
+                            
+
+
+  <!-- your other form fields go here -->
+
+                        <button class="btn btn-primary" type="submit">Send</button>
+                    </form>
+            </div>
+                </div>
+            </div>
+
+            </div>
+            
+        </div>
+        
     </body>
 </html>
