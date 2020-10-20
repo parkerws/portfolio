@@ -20,6 +20,7 @@ body{
     padding: 0;
     margin: 0;
     
+    
 
 }
 
@@ -184,7 +185,8 @@ form {
 .jumbotron {
     width: auto;
     margin: 0% 20% 2% 20%;
-    background-color: rgba(50, 50, 50, 0.2)
+    background-color: rgba(50, 50, 50, 0.2);
+    backdrop-filter: blur(5px);
 }
 
 .nav-link {
