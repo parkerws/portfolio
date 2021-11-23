@@ -1,0 +1,26 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Blob Storage Website CI
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: azure/login@v1
+      with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Upload to blob storage
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+            az storage blob upload-batch --account-name personalwebsa4242  --auth-mode key -d '$web' -s .
+      # Azure logout
+    - name: logout
+      run: |
+            az logout
+      if: always()
