@@ -1,26 +1,49 @@
-# This is a basic workflow to help you get started with Actions
+# Deploy Next.js Portfolio to Azure Blob Storage
 
-name: Blob Storage Website CI
+name: Deploy Portfolio
 
-# Controls when the workflow will run
 on:
   push:
-    branches: [ master ]
+    branches: [ master, main ]
+  workflow_dispatch:
+
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: azure/login@v1
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
       with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - name: Upload to blob storage
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Build Next.js app
+      run: npm run build
+      env:
+        NEXT_TELEMETRY_DISABLED: 1
+
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Upload to Azure Blob Storage
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name personalwebsa4242  --auth-mode key -d '$web' -s .
-      # Azure logout
-    - name: logout
-      run: |
-            az logout
+            az storage blob upload-batch \
+              --account-name personalwebsa4242 \
+              --auth-mode key \
+              -d '$web' \
+              -s ./out \
+              --overwrite
+
+    - name: Azure Logout
+      run: az logout
       if: always()
