@@ -1,21 +1,32 @@
-# Deploy Next.js Portfolio to Azure Blob Storage
+# Deploy Next.js Portfolio to GitHub Pages
 
-name: Deploy Portfolio
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [ master, main ]
   workflow_dispatch:
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: '20'
         cache: 'npm'
@@ -28,22 +39,23 @@ jobs:
       env:
         NEXT_TELEMETRY_DISABLED: 1
 
-    - name: Azure Login
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Add .nojekyll and CNAME files
+      run: |
+        touch out/.nojekyll
+        cp CNAME out/CNAME
 
-    - name: Upload to Azure Blob Storage
-      uses: azure/CLI@v1
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        inlineScript: |
-            az storage blob upload-batch \
-              --account-name personalwebsa4242 \
-              --auth-mode key \
-              -d '$web' \
-              -s ./out \
-              --overwrite
+        path: ./out
 
-    - name: Azure Logout
-      run: az logout
-      if: always()
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
