@@ -49,7 +49,7 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              Software Engineer | Security Practitioner | Data Analyst
+              Senior Cloud Engineer & Architect | Azure Expert | DevOps Leader
             </p>
           </motion.div>
 
@@ -89,38 +89,39 @@ export default function AboutPage() {
                 </div>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I&apos;ve been fascinated by technology since I was a kid. My father,
-                  an electrical engineer, inspired me to continue to tinker, learn,
-                  and succeed.
+                  I&apos;m a Senior Cloud Engineer and Architect at 3Cloud, specializing in Azure
+                  with a customer-focused approach to designing and implementing cloud platforms.
+                  I&apos;m passionate about how processes, people, and technology can enable
+                  organizations to fulfill their business objectives safely and productively.
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  Through a decade of military service, I picked up many perspectives
-                  on how technology permeates our everyday lives, and even more so, how
-                  it can be used against us when we are most vulnerable. This inspired
-                  me to focus on security, both physical and technological, for several
-                  years. I learned scripting, how HTTP worked, and how even the most
-                  robust security solutions can easily be broken by some clever and
-                  inexpensive social engineering.
+                  Currently, I lead the discovery, architecture design, and governance of CI/CD
+                  platforms like Spacelift, facilitating the rapid deployment of global Azure
+                  Enterprise-Scale landing zones. I&apos;ve developed environment-wide automation
+                  for landing zone vending that handles identity, governance, billing, source
+                  control, and pipeline management.
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  My journey led me to today, where I develop secure software solutions
-                  that enable others to thrive. I have experience in back-end
-                  technologies/languages such as Node.js, C#/ASP.NET, Entity Framework,
-                  and Python/Flask/Django.
+                  My expertise spans Azure and AWS cloud architecture, Kubernetes, Terraform,
+                  CI/CD pipelines, and cloud governance. I&apos;ve successfully led datacenter
+                  migrations, designed secure landing zones for Fortune 500 companies, and
+                  built automation that reduces deployment time from weeks to hours.
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  More recently, I have been determined to take on front-end development
-                  as well, working with languages/technologies such as HTML/CSS/JavaScript,
-                  React, Next.js, Tailwind CSS, and modern web frameworks.
+                  With a background in information security from my decade of military service
+                  in the U.S. Marine Corps, I bring a security-first mindset to every cloud
+                  solution I design. I hold multiple Azure certifications including Cybersecurity
+                  Architect Expert, DevOps Engineer Expert, and AWS Solutions Architect Associate.
                 </p>
 
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                  I also picked up skillsets in other domains, such as server
-                  administration, ethical hacking, social engineering, machine learning,
-                  and data analytics.
+                  I&apos;m a lifelong learner who thrives on mastering new technologies and
+                  finding innovative ways to solve complex infrastructure challenges. When I&apos;m
+                  not architecting cloud solutions, I enjoy building automation tools and
+                  contributing to the cloud engineering community.
                 </p>
 
                 {/* Resume Download Button */}

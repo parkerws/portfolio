@@ -40,15 +40,16 @@ export default function ProjectsPage() {
             </span>
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Below are a few of the projects I&apos;ve worked on in the past. I have
-            experience in{' '}
+            Below are projects and tools I&apos;ve built, ranging from{' '}
             <span className="font-semibold text-gray-900 dark:text-white">
-              C, C#, ASP.NET, Python, JavaScript, SQL, HTML,
+              cloud automation, infrastructure as code, CI/CD pipelines,
             </span>{' '}
-            and{' '}
-            <span className="font-semibold text-gray-900 dark:text-white">CSS</span>,
-            ranging from simple command-line applications, RESTful APIs, and
-            full-stack web applications.
+            to{' '}
+            <span className="font-semibold text-gray-900 dark:text-white">
+              data analysis tools and web applications
+            </span>
+            . My work focuses on solving real-world infrastructure challenges with
+            scalable, automated solutions.
           </p>
           <a
             href="https://github.com/parkerws"

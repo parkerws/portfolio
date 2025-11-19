@@ -5,18 +5,24 @@ import Navbar from '@/components/navbar';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Will Parker - Software Engineer',
+    default: 'Will Parker - Cloud Architect & Azure Engineer',
     template: '%s | Will Parker',
   },
   description:
-    'Software Engineer, Security Practitioner, and Data Analyst. Specializing in full-stack development, cybersecurity, and machine learning.',
+    'Senior Cloud Engineer and Architect specializing in Azure, landing zones, Terraform, and DevOps. Building secure, scalable cloud platforms for enterprise clients.',
   keywords: [
-    'software engineer',
-    'full-stack developer',
-    'cybersecurity',
-    'data analyst',
-    'machine learning',
-    'web development',
+    'cloud architect',
+    'azure engineer',
+    'cloud engineer',
+    'terraform',
+    'kubernetes',
+    'landing zones',
+    'devops',
+    'azure devops',
+    'infrastructure as code',
+    'cloud governance',
+    'aws',
+    'ci/cd',
   ],
   authors: [{ name: 'Will Parker' }],
   creator: 'Will Parker',
@@ -25,15 +31,15 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://willparker.dev',
     siteName: 'Will Parker Portfolio',
-    title: 'Will Parker - Software Engineer',
+    title: 'Will Parker - Cloud Architect & Azure Engineer',
     description:
-      'Software Engineer, Security Practitioner, and Data Analyst',
+      'Senior Cloud Engineer specializing in Azure enterprise-scale landing zones, Terraform automation, and cloud governance',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Will Parker - Software Engineer',
+    title: 'Will Parker - Cloud Architect',
     description:
-      'Software Engineer, Security Practitioner, and Data Analyst',
+      'Azure Cloud Architect | Landing Zones | Terraform | DevOps',
   },
 };
 

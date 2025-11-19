@@ -78,15 +78,15 @@ export default function Home() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl"
           >
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Software Engineer
+              Cloud Architect
             </span>
             <br />
             <span className="text-gray-900 dark:text-white">
-              Security Practitioner
+              Azure Engineer
             </span>
             <br />
             <span className="text-gray-900 dark:text-white">
-              Data Analyst
+              DevOps Leader
             </span>
           </motion.h1>
 
@@ -95,12 +95,13 @@ export default function Home() {
             variants={itemVariants}
             className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mb-8 leading-relaxed"
           >
-            I enjoy all aspects of development, from back-end to front-end. I&apos;m
-            dedicated to creating{' '}
+            Experienced cloud engineer and architect specializing in Azure with a customer-focused
+            approach to designing and implementing enterprise-scale landing zones. I&apos;m
+            dedicated to building{' '}
             <span className="font-semibold text-gray-900 dark:text-white">
-              secure, dynamic, and responsive
+              secure, scalable, and governed
             </span>{' '}
-            web applications and software solutions for any situation.
+            cloud platforms that enable organizations to achieve their business outcomes.
           </motion.p>
 
           {/* CTA Buttons */}
