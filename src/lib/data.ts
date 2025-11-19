@@ -94,27 +94,37 @@ export const projects: Project[] = [
 ];
 
 export const skills: Skill[] = [
-  // Backend
-  { name: 'Node.js', category: 'backend', proficiency: 85 },
-  { name: 'C# / ASP.NET', category: 'backend', proficiency: 80 },
-  { name: 'Python', category: 'backend', proficiency: 85 },
-  { name: 'Flask / Django', category: 'backend', proficiency: 75 },
-  { name: 'Entity Framework', category: 'backend', proficiency: 70 },
+  // Cloud & Infrastructure
+  { name: 'Azure', category: 'other', proficiency: 95 },
+  { name: 'AWS', category: 'other', proficiency: 85 },
+  { name: 'Terraform', category: 'tools', proficiency: 95 },
+  { name: 'Kubernetes / AKS', category: 'other', proficiency: 90 },
+  { name: 'Bicep', category: 'tools', proficiency: 90 },
+  { name: 'Landing Zones', category: 'other', proficiency: 95 },
 
-  // Frontend
+  // DevOps & Automation
+  { name: 'CI/CD Pipelines', category: 'tools', proficiency: 90 },
+  { name: 'PowerShell', category: 'backend', proficiency: 90 },
+  { name: 'Bash', category: 'backend', proficiency: 85 },
+  { name: 'Git / GitOps', category: 'tools', proficiency: 90 },
+  { name: 'Helm', category: 'tools', proficiency: 85 },
+
+  // Programming & Development
+  { name: 'Python', category: 'backend', proficiency: 90 },
+  { name: 'Node.js', category: 'backend', proficiency: 80 },
+  { name: 'React / Next.js', category: 'frontend', proficiency: 85 },
   { name: 'TypeScript', category: 'frontend', proficiency: 85 },
-  { name: 'React / Next.js', category: 'frontend', proficiency: 90 },
-  { name: 'HTML / CSS', category: 'frontend', proficiency: 90 },
-  { name: 'Tailwind CSS', category: 'frontend', proficiency: 85 },
-  { name: 'JavaScript', category: 'frontend', proficiency: 90 },
 
-  // Tools & Other
-  { name: 'Git', category: 'tools', proficiency: 85 },
-  { name: 'SQL', category: 'backend', proficiency: 75 },
-  { name: 'REST APIs', category: 'backend', proficiency: 85 },
-  { name: 'Machine Learning', category: 'other', proficiency: 70 },
-  { name: 'Data Analytics', category: 'other', proficiency: 75 },
-  { name: 'Security / Ethical Hacking', category: 'other', proficiency: 80 },
+  // Security & Governance
+  { name: 'Cloud Governance', category: 'other', proficiency: 95 },
+  { name: 'Security Operations', category: 'other', proficiency: 90 },
+  { name: 'Identity Management', category: 'other', proficiency: 90 },
+  { name: 'Risk Management', category: 'other', proficiency: 85 },
+
+  // Networking & Data
+  { name: 'Network Design', category: 'other', proficiency: 85 },
+  { name: 'SQL', category: 'backend', proficiency: 80 },
+  { name: 'Data Analysis', category: 'other', proficiency: 85 },
 ];
 
 export const socialLinks = {
